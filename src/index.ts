@@ -31,6 +31,8 @@ const verifyWebhookSignatureHeader = (req, secret) => {
 	return true;
 };
 
+app.use(express.json());
+
 app.get('/', (_req, res) => {
 	res.send(welcomeStrings.join('\n\n'));
 });
