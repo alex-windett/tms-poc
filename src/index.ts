@@ -1,6 +1,6 @@
 import express from 'express';
 
-import githubRoute from '../routes/tolgee/github.ts';
+import crypto from 'crypto';
 
 const app = express();
 
