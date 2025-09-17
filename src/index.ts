@@ -38,9 +38,9 @@ app.get('/', (_req, res) => {
 app.post('/tolgee/github', (req, res) => {
 	const secret = 'whsec_249b7ff6e0dfa1e38906924a8334e969';
 
-	const isValid = verifyWebhookSignatureHeader(req, secret);
+	console.log('body', req.body);
 
-	console.log(req);
+	const isValid = verifyWebhookSignatureHeader(req, secret);
 
 	console.log('isValid', isValid);
 
