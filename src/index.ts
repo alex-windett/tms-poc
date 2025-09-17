@@ -40,6 +40,8 @@ app.post('/tolgee/github', (req, res) => {
 
 	const isValid = verifyWebhookSignatureHeader(req, secret);
 
+	console.log(req);
+
 	console.log('isValid', isValid);
 
 	res.send('OK');
