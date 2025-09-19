@@ -1,0 +1,8 @@
+{
+  "hello": "Hello world",
+  "greeting": "Hello {{name}}, welcome to Tolgee!",
+  "test": {
+    "simple": "This is a simple test",
+    "withVariable": "This is a test with {{variable}}"
+  }
+}

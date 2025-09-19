@@ -1,0 +1,115 @@
+name: Upload translations to Tolgee
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+    paths:
+      - 'locales/en.yml'
+      - 'locales/en.json'
+      - 'locales/**/en.yml'
+      - 'locales/**/en.json'
+
+jobs:
+  upload-to-tolgee:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Find modified English translation files
+      id: find-files
+      run: |
+        echo "Looking for English translation files..."
+
+        # Find all en.yml and en.json files
+        files=$(find . -name "en.yml" -o -name "en.json" | head -10)
+
+        if [ -z "$files" ]; then
+          echo "No English translation files found"
+          echo "files_found=false" >> $GITHUB_OUTPUT
+        else
+          echo "Found files:"
+          echo "$files"
+          echo "files_found=true" >> $GITHUB_OUTPUT
+
+          # Create a JSON array of files for the matrix
+          file_list=""
+          for file in $files; do
+            if [ -n "$file_list" ]; then
+              file_list="$file_list,"
+            fi
+            file_list="$file_list\"$file\""
+          done
+          echo "file_matrix=[$file_list]" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Upload files to Tolgee
+      if: steps.find-files.outputs.files_found == 'true'
+      run: |
+        # Parse the file matrix and upload each file
+        files='${{ steps.find-files.outputs.file_matrix }}'
+        echo "Files to upload: $files"
+
+        # Remove brackets and quotes, split by comma
+        clean_files=$(echo "$files" | sed 's/\[//g' | sed 's/\]//g' | sed 's/"//g')
+
+        IFS=',' read -ra FILE_ARRAY <<< "$clean_files"
+
+        for file_path in "${FILE_ARRAY[@]}"; do
+          file_path=$(echo "$file_path" | xargs) # trim whitespace
+
+          if [ -f "$file_path" ]; then
+            echo "Uploading $file_path to Tolgee..."
+
+            # Get file extension to determine content type
+            if [[ "$file_path" == *.json ]]; then
+              content_type="application/json"
+            elif [[ "$file_path" == *.yml ]] || [[ "$file_path" == *.yaml ]]; then
+              content_type="application/x-yaml"
+            else
+              content_type="text/plain"
+            fi
+
+            # Upload file to Tolgee API
+            response=$(curl -X POST \
+              -H "X-API-Key: ${{ secrets.TOLGEE_API_KEY }}" \
+              -H "User-Agent: GitHub-Actions-Tolgee-Upload" \
+              -F "files=@$file_path;type=$content_type" \
+              -w "%{http_code}" \
+              -s \
+              "${{ vars.TOLGEE_BASE_URL || 'https://app.tolgee.io' }}/v2/projects/${{ secrets.TOLGEE_PROJECT_ID }}/import")
+
+            http_code="${response: -3}"
+            response_body="${response%???}"
+
+            echo "HTTP Status: $http_code"
+            echo "Response: $response_body"
+
+            if [ "$http_code" -eq 200 ] || [ "$http_code" -eq 201 ]; then
+              echo "✅ Successfully uploaded $file_path"
+            else
+              echo "❌ Failed to upload $file_path (HTTP $http_code)"
+              echo "Response body: $response_body"
+              exit 1
+            fi
+          else
+            echo "⚠️  File not found: $file_path"
+          fi
+        done
+
+        echo "🎉 All files uploaded successfully!"
+
+    - name: Summary
+      if: always()
+      run: |
+        if [ "${{ steps.find-files.outputs.files_found }}" == "true" ]; then
+          echo "## 📊 Tolgee Upload Summary" >> $GITHUB_STEP_SUMMARY
+          echo "Files processed: ${{ steps.find-files.outputs.file_matrix }}" >> $GITHUB_STEP_SUMMARY
+          echo "Project ID: ${{ secrets.TOLGEE_PROJECT_ID }}" >> $GITHUB_STEP_SUMMARY
+          echo "Tolgee URL: ${{ vars.TOLGEE_BASE_URL || 'https://app.tolgee.io' }}" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "## ℹ️ No English translation files found" >> $GITHUB_STEP_SUMMARY
+        fi

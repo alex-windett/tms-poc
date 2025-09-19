@@ -1,0 +1,22 @@
+account:
+  ap_loyalty_offer:
+    choose_gift:
+      cta_primary: Wybierać polish
+    free_gift_card:
+      cta_primary: Rozpakuj swój darmowy
+    allergen_notification: Zawiera składniki, które mogą być alergenami {dogName}
+    allergen_notification_plural: >-
+      Zawiera składniki, które mogą być alergenami dla  - {firstDog}
+      {secondDog} 
+  appointment_card:
+    header_text: Spotkanie {{dogName}} z pielęgniarką weterynaryjną {{proName}}
+care:
+  pet_care_pros:
+    next_appointment:
+      card:
+        title: Wizyta {{dogName}} u pielęgniarki weterynaryjnej {{professionalName}}
+molecules:
+  health_appointment:
+    pet_care_professional_info: >-
+      Spotkanie {{possessiveDogName}} z pielęgniarką weterynaryjną
+      {{petCareProfessionalName}}

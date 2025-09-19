@@ -1,8 +1,8 @@
 {
   "account": {
     "ap_loyalty_offer": {
-      "allergen_notification": "This features ingredients that may be allergens for '{{'dogName'}}'",
-      "allergen_notification_plural": "This features ingredients that may be allergens for your dogs",
+      "allergen_notification": "This features ingredients that may be allergens for {dogName}",
+      "allergen_notification_plural": "This features ingredients that may be allergens for your dogs {firstDog} {secondDog} ",
       "choose_gift": {
         "cta_primary": "Select",
         "subtitle": "For a limited time, you can choose a free gift with every delivery.",
@@ -27,7 +27,7 @@
     },
     "appointment_card": {
       "calendar_alt": "Small illustration of a calendar",
-      "header_text": "'{{'dogName'}}' appointment with Vet Nurse '{{'proName'}}'",
+      "header_text": "'{dogName}' appointment with Vet Nurse'",
       "section_divider_alt": "Section divider line",
       "stethoscope_alt": "Small illustration of a stethoscope",
       "ten_minute": "10 min quick check-in",
@@ -1002,24 +1002,24 @@
         "tip2_subtitle": "Turn them into a joyful occasion rather than a routine task.",
         "tip2_title": "Tip 2: ✨ Allow time for mealtimes",
         "tip3_subtitle": "Spice up mealtime with interactive feeding toys, making eating a fun mental workout for your dog",
-        "tip3_title": "Tip 3: \uD83E\uDD62 Trade the traditional bowl",
-        "tip4_subtitle": "Shower your pup with attention and praise when they finish their meal! It's like giving them a gold medal for doing exactly what you hoped for \uD83C\uDFC5",
-        "tip4_title": "Tip 4: \uD83D\uDC95 Show some love after dinner"
+        "tip3_title": "Tip 3: 🥢 Trade the traditional bowl",
+        "tip4_subtitle": "Shower your pup with attention and praise when they finish their meal! It's like giving them a gold medal for doing exactly what you hoped for 🏅",
+        "tip4_title": "Tip 4: 💕 Show some love after dinner"
       },
       "fussy": {
         "habits": "Habits",
         "surroundings": "Surroundings",
         "tip1_list": {
-          "item1": "\uD83E\uDDF8 Place their where you think your dog is going to feel comfortable eating, avoid busy rooms, for example a hallway.",
-          "item2": "\uD83D\uDC41️ Ensure they have 360 vision when eating (avoid corners of rooms)<br><strong>Why?</strong> So they can relax and enjoy their food",
-          "item3": "\uD83E\uDD10 When serving, no need for extra commands, just let them dive into their meal without unnecessary stress."
+          "item1": "🧸 Place their where you think your dog is going to feel comfortable eating, avoid busy rooms, for example a hallway.",
+          "item2": "👁️ Ensure they have 360 vision when eating (avoid corners of rooms)<br><strong>Why?</strong> So they can relax and enjoy their food",
+          "item3": "🤐 When serving, no need for extra commands, just let them dive into their meal without unnecessary stress."
         },
         "tip1_title": "Tip 1: Set the dinner scene for chill vibes",
         "tip2_subtitle": "<strong>Why?</strong> Just like humans, dogs become hungrier after being active. Exercise is a great way to build up an appetite",
         "tip2_title": "Tip 2: Exercise before meals",
         "tip3_subtitle": "<strong>Why?</strong> Dogs have super- sensitive noses, and the chemicals we use are strong.",
         "tip3_title": "Tip 3: Freshen Up Your Pup’s Dish",
-        "tip4_subtitle": "<strong>Why?</strong> While stainless steel bowls are a common choice for dog dining, some dogs might turn their noses up at the metallic scent and taste. Additionally, the clanging noise they make might bother our more sensitive friends \uD83D\uDC3E Consider exploring other bowl options.",
+        "tip4_subtitle": "<strong>Why?</strong> While stainless steel bowls are a common choice for dog dining, some dogs might turn their noses up at the metallic scent and taste. Additionally, the clanging noise they make might bother our more sensitive friends 🐾 Consider exploring other bowl options.",
         "tip4_title": "Tip 4: Upgrade Your Pup’s Dinnerware (if needed)",
         "tip5_list": {
           "item1": "Let the food stay for 10-15 minutes, then store it until the next feast. This helps your dog to understand options do not exist.",
@@ -2270,7 +2270,7 @@
         "made_six_referrals": "If you have made 6 referrals in 6 months, congratulations, you are eligible!",
         "pop_us_email": "Simply pop us an email on ambassadors@butternutbox.com and we will apply that discount right away.",
         "visit_the_free_merch_page": "Visit the <a href='/dashboard/merch' rel=\"noopener noreferrer\" target='_blank'>Free Merch page</a> and simply place your order. We will endeavour to fulfil the order with your personal discount link on within 2 weeks.",
-        "visit_the_refer_a_client_page": "Visit the <a href='/dashboard/merch' rel=\"noopener noreferrer\" target='_blank'>Refer a Client page</a> on your Ambassador dashboard and you'll see your discount link. You can copy the link to send directly to your clients or share the link via the page. Your clients can also type in your name or discount code in the checkout to receive your discount. When a client signs up to Butternut Box via your unique link, you will receive an email from us to confirm the referral \uD83D\uDE0A",
+        "visit_the_refer_a_client_page": "Visit the <a href='/dashboard/merch' rel=\"noopener noreferrer\" target='_blank'>Refer a Client page</a> on your Ambassador dashboard and you'll see your discount link. You can copy the link to send directly to your clients or share the link via the page. Your clients can also type in your name or discount code in the checkout to receive your discount. When a client signs up to Butternut Box via your unique link, you will receive an email from us to confirm the referral 😊",
         "when_will_i_be_eligible": "When will I be eligible for the Ambassador exclusive 15% off my dog food?"
       },
       "give_get_referral_component": {
@@ -2314,8 +2314,8 @@
         "couldnt_copy": "Oops! Couldn't copy",
         "email": "Email",
         "email_body_first": "Butternut Box make freshly prepared dog food, gently cooked like you would at home and deliver it to your dog's door in perfect portions. I am passionate about the positive effects nutrition can have on a dog's health, happiness and behaviour.",
-        "email_body_second": "To find out more and to try some of their meals for your pup, use my '{{'discountMessage'}}': Go to '{{'referralLink'}}' and order your first box today.\uD83D\uDC3E",
-        "email_subject": "I think you have a pup who will love Butternut Box! \uD83D\uDC36",
+        "email_body_second": "To find out more and to try some of their meals for your pup, use my '{{'discountMessage'}}': Go to '{{'referralLink'}}' and order your first box today.🐾",
+        "email_subject": "I think you have a pup who will love Butternut Box! 🐶",
         "fifty_off_discount": "50% off discount",
         "fifty_off_first_two": "50% off your first two boxes",
         "free_box": "Free Box",
@@ -2327,7 +2327,7 @@
         "share_link_on": "Share your link on:",
         "share_link_via": "Share your link via:",
         "twenty_five_off_first_two": "25% off your first two boxes",
-        "whatsapp_message": "Butternut Box make freshly prepared dog food, cooked like you would at home, delivered in perfect portions. You have a furry friend who I think might love their meals - so here is my '{{'discountType'}}' discount link if you wanted to try them out: '{{'referralLink'}}' \uD83D\uDC36"
+        "whatsapp_message": "Butternut Box make freshly prepared dog food, cooked like you would at home, delivered in perfect portions. You have a furry friend who I think might love their meals - so here is my '{{'discountType'}}' discount link if you wanted to try them out: '{{'referralLink'}}' 🐶"
       },
       "referral_tab": {
         "and_followers": "and followers",
@@ -5732,9 +5732,9 @@
         "reassurance_message": "Don't worry, we've sent out all other emails.",
         "referral_copy": "Fetch '{{'boxValueCopy1'}}' off '{{'boxCopy1'}}'.",
         "referral_copy_plural": "Fetch '{{'boxValueCopy1'}}' off '{{'boxCopy1'}}' and '{{'boxValueCopy2'}}' off '{{'boxCopy2'}}'",
-        "referral_text_female": "My dog, '{{'joinedDogsNames'}}' loves her Butternut Box meals and I think yours will too. \uD83D\uDC36 Butternut Box make healthy, freshly prepared meals with human grade ingredients. They are perfect for fussy eaters or sensitive tummies. '{{'referralCopy'}}'",
-        "referral_text_male": "My dog, '{{'joinedDogsNames'}}' loves his Butternut Box meals and I think yours will too. \uD83D\uDC36 Butternut Box make healthy, freshly prepared meals with human grade ingredients. They are perfect for fussy eaters or sensitive tummies. '{{'referralCopy'}}'",
-        "referral_text_plural": "My dogs, '{{'joinedDogsNames'}}' love their Butternut Box meals and I think yours will too. \uD83D\uDC36 Butternut Box make healthy, freshly prepared meals with human grade ingredients. They are perfect for fussy eaters or sensitive tummies. '{{'referralCopy'}}'",
+        "referral_text_female": "My dog, '{{'joinedDogsNames'}}' loves her Butternut Box meals and I think yours will too. 🐶 Butternut Box make healthy, freshly prepared meals with human grade ingredients. They are perfect for fussy eaters or sensitive tummies. '{{'referralCopy'}}'",
+        "referral_text_male": "My dog, '{{'joinedDogsNames'}}' loves his Butternut Box meals and I think yours will too. 🐶 Butternut Box make healthy, freshly prepared meals with human grade ingredients. They are perfect for fussy eaters or sensitive tummies. '{{'referralCopy'}}'",
+        "referral_text_plural": "My dogs, '{{'joinedDogsNames'}}' love their Butternut Box meals and I think yours will too. 🐶 Butternut Box make healthy, freshly prepared meals with human grade ingredients. They are perfect for fussy eaters or sensitive tummies. '{{'referralCopy'}}'",
         "remove_btn": "Remove",
         "send_email": "Send them an email",
         "send_email_btn": "Send",
@@ -5949,9 +5949,43 @@
     }
   },
   "date": {
-    "abbr_month_names": [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ],
-    "day_names": [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ],
-    "month_names": [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]
+    "abbr_month_names": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "day_names": [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "month_names": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ]
   },
   "devise": {
     "change_password": {
@@ -8818,7 +8852,7 @@
                 "title": "Her coat is healthy"
               },
               "card_2": {
-                "quote": "“His coat is so shiny and healthy, he’s no longer itching like he used to, and he looks trimmer and overall much healthier. \uD83D\uDC3E\uD83D\uDCAA Plus, he just seems so much happier and more settled since the switch. It’s honestly been a game-changer!”",
+                "quote": "“His coat is so shiny and healthy, he’s no longer itching like he used to, and he looks trimmer and overall much healthier. 🐾💪 Plus, he just seems so much happier and more settled since the switch. It’s honestly been a game-changer!”",
                 "title": "His coat is so shiny"
               },
               "card_3": {
@@ -8857,7 +8891,7 @@
                 "title": "A very satisfied puppy"
               },
               "card_3": {
-                "quote": "“I have just received my 1st Months box. As new Pet owners we are really beginners. Mo is 13 weeks an active Cockapoo and absolutely \uD83D\uDCAF loving the introduction of the Butternut food. Enjoying all the different recipes \uD83D\uDE0B. Follow up calls and assistance and level of service and easy to use app is so helpful. Would highly recommend”",
+                "quote": "“I have just received my 1st Months box. As new Pet owners we are really beginners. Mo is 13 weeks an active Cockapoo and absolutely 💯 loving the introduction of the Butternut food. Enjoying all the different recipes 😋. Follow up calls and assistance and level of service and easy to use app is so helpful. Would highly recommend”",
                 "title": "New puppy owners"
               }
             },
@@ -10040,10 +10074,17 @@
     },
     "finishing_up": {
       "button_text_finish": "All done. Take a look",
-      "descriptions": [ "Good stuff", "Shiny", "Top dog", "Nice one", "You rock", "Can't wait" ],
+      "descriptions": [
+        "Good stuff",
+        "Shiny",
+        "Top dog",
+        "Nice one",
+        "You rock",
+        "Can't wait"
+      ],
       "getting_ready": "While we're getting your profile ready...",
-      "page_title": "'{{'dogName'}}' profile is ready \uD83D\uDC4D",
-      "page_title_plural": "Their profile is ready \uD83D\uDC4D",
+      "page_title": "'{{'dogName'}}' profile is ready 👍",
+      "page_title_plural": "Their profile is ready 👍",
       "subtitle": "It's looking very good.",
       "title": "Finishing Up"
     },
@@ -10083,7 +10124,13 @@
       "add_photo": "Add a photo",
       "button_text_next": "Last one: bits and bobs",
       "change_photo": "Change photo",
-      "compliments": [ "Great shot.", "Oh nice.", "Such beauty.", "Top model.", "Majestic." ],
+      "compliments": [
+        "Great shot.",
+        "Oh nice.",
+        "Such beauty.",
+        "Top model.",
+        "Majestic."
+      ],
       "footnote": "You can always add a photo later in your account.",
       "optional": "(optional)",
       "subtitle": "We like putting a face to a name.",
@@ -11730,5 +11777,6 @@
       "weight_slider_prompt_female": "Use the slider above to give us her approximate weight.",
       "weight_slider_prompt_male": "Use the slider above to give us his approximate weight."
     }
-  }
+  },
+  "hello_test": "{value, plural,\nother {hello everyone}\none {hello there}\n}"
 }
