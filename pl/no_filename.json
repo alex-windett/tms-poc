@@ -1,0 +1,8 @@
+{
+    "my_key": {
+        "one": "Test liczby mnogiej",
+        "few": "Test liczba mnoga",
+        "many": "Test liczba mnoga",
+        "other": "Testuj liczby mnogie"
+    }
+}
