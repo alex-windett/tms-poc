@@ -2,6 +2,9 @@ account:
   ap_loyalty_offer:
     choose_gift:
       cta_primary: Wybierać polish
+      subtitle: >-
+        Przez ograniczony czas przy każdej dostawie możesz wybrać bezpłatny
+        prezent. New Polish words
     free_gift_card:
       cta_primary: Rozpakuj swój darmowy
     allergen_notification: Zawiera składniki, które mogą być alergenami {dogName}

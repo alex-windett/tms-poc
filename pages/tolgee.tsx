@@ -17,8 +17,8 @@ export default function Tolgee() {
 						</p>
 
 						<div className='bg-blue-50 rounded-lg p-4 mb-6'>
-							<p>{t('account.ap_loyalty_offer.allergen_notification')}</p>
-							<p>{t('account.ap_loyalty_offer.choose_gift.subtitle')}</p>
+							<p>{t('account.ap_loyalty_offer.allergen_notification', { dogName: 'Spot' })}</p>
+							<p>{t('account.ap_loyalty_offer.choose_gift.subtitle', { dogName: 'Spot' })}</p>
 						</div>
 
 						<div className='bg-blue-50 rounded-lg p-4 mb-6'>
