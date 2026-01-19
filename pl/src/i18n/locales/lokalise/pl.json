@@ -1,0 +1,7 @@
+{
+    "namespace": {
+        "hello": "Witaj świecie",
+        "hello_plural": "Witaj świecie",
+        "new_string": "nowy ciąg"
+    }
+}

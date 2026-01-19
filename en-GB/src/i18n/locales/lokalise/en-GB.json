@@ -1,0 +1,7 @@
+{
+    "namespace": {
+        "hello": "hello world",
+        "hello_plural": "hello world",
+        "new_string": "new string"
+    }
+}
